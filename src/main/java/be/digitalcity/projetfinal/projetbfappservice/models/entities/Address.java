@@ -3,14 +3,12 @@ package be.digitalcity.projetfinal.projetbfappservice.models.entities;
 import be.digitalcity.projetfinal.projetbfappservice.models.entities.abstractClass.BaseEntity;
 import lombok.*;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.PrePersist;
-import javax.persistence.PreUpdate;
+import javax.persistence.*;
 import java.time.LocalDate;
 
 @EqualsAndHashCode(callSuper = true)
 @Entity
+@Table(name = "app_address")
 @ToString
 @Getter
 @Setter

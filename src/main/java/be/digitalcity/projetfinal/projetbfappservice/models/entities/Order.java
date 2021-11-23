@@ -8,6 +8,7 @@ import java.time.LocalDate;
 
 @EqualsAndHashCode(callSuper = true)
 @Entity
+@Table(name = "app_order")
 @ToString
 @Getter
 @Setter
@@ -18,10 +19,10 @@ public class Order extends BaseEntity<Long> {
     private LocalDate startTime;
     @Column(nullable = false)
     private LocalDate endTime;
-    @ManyToOne(targetEntity = OrderAddress.class)
-    private OrderAddress orderAddress;
-    @ManyToOne(targetEntity = User.class)
-    private User orderUser;
+    @OneToOne(targetEntity = Address.class)
+    private Address orderAddress;
+    @ManyToOne(targetEntity = Client.class)
+    private Client orderClient;
 
     @PrePersist
     public void prePersist() {

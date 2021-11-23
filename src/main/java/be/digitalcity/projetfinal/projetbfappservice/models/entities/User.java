@@ -7,6 +7,7 @@ import java.time.LocalDate;
 
 @EqualsAndHashCode(callSuper = true)
 @Entity
+@Table(name = "app_user")
 @ToString
 @Getter
 @Setter
@@ -15,13 +16,11 @@ import java.time.LocalDate;
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 public abstract class User extends BaseEntity<Long> {
 
-//    inheritance single table
-
     @Column(nullable = false, unique = true)
     private String email;
     @Column(nullable = false, unique = true)
     private String username;
-    @Column(nullable = false, unique = true)
+    @Column(nullable = false)
     private String password;
 
     @PrePersist

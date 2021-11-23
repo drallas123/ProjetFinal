@@ -8,6 +8,7 @@ import java.time.LocalDate;
 
 @EqualsAndHashCode(callSuper = true)
 @Entity
+@Table(name = "app_service")
 @ToString
 @Getter
 @Setter
