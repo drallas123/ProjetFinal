@@ -5,6 +5,7 @@ import lombok.*;
 
 import javax.persistence.*;
 import java.time.LocalDate;
+import java.util.Set;
 
 @EqualsAndHashCode(callSuper = true)
 @Entity
@@ -18,6 +19,10 @@ public class Group extends BaseEntity<Long> {
 
     @Column(nullable = false, unique = true)
     private String name;
+
+    @ManyToMany(targetEntity = Role.class, fetch = FetchType.EAGER)
+    @JoinTable(name = "Security_Group_Role")
+    private Set<Role> roleList;
 
     @PrePersist
     public void prePersist() {

@@ -1,6 +1,5 @@
 package be.digitalcity.projetfinal.projetbfappservice.models.dto;
 
-import be.digitalcity.projetfinal.projetbfappservice.models.entities.User;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;

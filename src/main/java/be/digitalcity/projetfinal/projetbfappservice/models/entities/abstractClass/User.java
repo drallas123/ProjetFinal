@@ -1,4 +1,4 @@
-package be.digitalcity.projetfinal.projetbfappservice.models.entities;
+package be.digitalcity.projetfinal.projetbfappservice.models.entities.abstractClass;
 
 import be.digitalcity.projetfinal.projetbfappservice.models.entities.abstractClass.BaseEntity;
 import lombok.*;
