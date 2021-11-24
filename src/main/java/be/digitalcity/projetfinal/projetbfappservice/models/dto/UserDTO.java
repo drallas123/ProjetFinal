@@ -21,4 +21,10 @@ public class UserDTO {
     private List<RoleDTO> roles;
     private GroupDTO group;
 
+    private String token;
+    private boolean accountNonExpired;
+    private boolean accountNonLocked;
+    private boolean creditialsNonExpired;
+    private boolean enabled;
+
 }

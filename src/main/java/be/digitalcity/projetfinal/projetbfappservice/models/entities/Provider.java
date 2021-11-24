@@ -1,5 +1,4 @@
 package be.digitalcity.projetfinal.projetbfappservice.models.entities;
-import be.digitalcity.projetfinal.projetbfappservice.models.entities.abstractClass.User;
 import lombok.*;
 
 import javax.persistence.Column;
